@@ -22,6 +22,7 @@ class StartViewController: UIViewController {
         view.addSubview(tableView)
         tableView.register(PersonTableViewCell.self, forCellReuseIdentifier: "Person")
         tableView.estimatedRowHeight = 50
+        tableView.isHidden = true
         tableView.rowHeight = UITableView.automaticDimension
         tableView.dataSource = self
         tableView.delegate = self
