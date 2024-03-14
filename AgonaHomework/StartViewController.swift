@@ -18,7 +18,7 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-
+        print("Did show")
         view.addSubview(tableView)
         tableView.register(PersonTableViewCell.self, forCellReuseIdentifier: "Person")
         tableView.estimatedRowHeight = 50
